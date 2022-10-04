@@ -43,3 +43,18 @@ $ rm -rf build/ log/ install/ && colcon build
 
 
 ```
+
+```bash
+# how to run
+$ mkdir -p ~/ros2_ws/src
+$ cd ~/ros2_ws/src
+$ git clone https://github.com/Kucukcollu/ros2_tutorials
+$ cd ..
+$ colcon build
+
+# how to run publisher and subscriber
+# in therminal 1
+$ ros2 run publisher_subcriber talker
+# in terminal 2
+$ ros2 run publisher_subcriber listener
+```
